@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Formulario de nuevos personajes</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/stylesheet.css">
+</head>
+<body>
+
+    <ul class = "navbar">
+        <li><a href="../../formulario/html_css/form.html">HTML-CSS Formulario</a></li>
+        <li><a href="../../listado/html_css/list.html">HTML-CSS Listado</a> </li>
+        <li><a href="../../formulario/bootstrap/form.html">Bootstrap Formulario</a></li>
+        <li><a href="../../listado/bootstrap/list.html">Bootstrap Listado</a></li>
+        <li><a href="../../formulario/tailwindcss/form.html">Tailwind Formulario</a></li>
+        <li><a href="../../listado/tailwindcss/list.html">Tailwind Listado</a></li>
+    </ul>
+
+    <div class = "title">Creador de personajes de DND</div> 
+
+    <section>
+        <div class="body-container">
+            <div class="container">
+                <br /> 
+                <form>
+                    <div class = "textLabel">Nombre:</div> 
+                    <input name="name" class="form-control" type="text" placeholder="¿Como se lo conoce en el mundo?"/> 
+                    <br /> 
+                    <div class = "textLabel">Edad:</div> 
+                    <input max="99" class="form-control" min="1" name="age" step="1" type="number" value="18" /> 
+                    <br />
+                    <div class = "textLabel">Nivel:</div> 
+                    <input max="99" class="form-control" min="1" name="level" step="1" type="number" value="1" /> 
+                    <br />
+                    <div class = "textLabel">Raza:</div> 
+                    <input name="race" class="form-control" type="text" placeholder="Raza de su personaje" /> 
+                    <br /> 
+                    <div class = "textLabel">Clase:</div> 
+                    <select id='dndClass' class="form-control" name='dndClass'>
+                        <option value="Barbarian">Barbarian</option>
+                        <option value="Bard">Bard</option>
+                        <option value="Cleric">Cleric</option>
+                        <option value="Druid">Druid</option>
+                        <option value="Fighter">Fighter</option>
+                        <option value="Monk">Monk</option>
+                        <option value="Paladin">Paladin</option>
+                        <option value="Ranger">Ranger</option>
+                        <option value="Rogue">Rogue</option>
+                        <option value="Sorcerer">Sorcerer</option>
+                        <option value="Warlock">Warlock</option>
+                        <option value="Wizard">Wizard</option>
+                      </select>
+                    <br /> 
+                    <div class = "textLabel">Trasfondo del personaje:</div> 
+                    <textarea class="form-control" cols="20" name="characterBackground" rows="5" placeholder="Inserte su historia..."></textarea><br />
+                <input type="submit" class="form-control" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
